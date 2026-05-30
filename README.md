@@ -61,6 +61,16 @@ go vet ./...
 go test -race ./...
 ```
 
+### Integration tests
+
+This repository includes an integration test suite that runs against a real Redis instance in Docker.
+
+```bash
+go test -tags=integration ./...
+```
+
+Make sure Docker is available locally before running these tests.
+
 ### Docker
 
 Build the binary into `bin/app`, then:
